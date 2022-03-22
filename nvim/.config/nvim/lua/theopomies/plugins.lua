@@ -77,10 +77,14 @@ return packer.startup(function(use)
     -- ------------Languages--------------
     -- Rust
     use "simrat39/rust-tools.nvim"
+
+    -- -----------------------------------
+
     -- ===================================
 
     -- Telescope
     use "nvim-telescope/telescope.nvim"
+    use "nvim-telescope/telescope-fzy-native.nvim"
 
     -- Git
     use "tpope/vim-fugitive"
@@ -90,6 +94,9 @@ return packer.startup(function(use)
     use "tpope/vim-surround"
     use "tpope/vim-commentary"
     use "christoomey/vim-system-copy"
+
+    use "kyazdani42/nvim-web-devicons"
+    use "kyazdani42/nvim-tree.lua"
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
