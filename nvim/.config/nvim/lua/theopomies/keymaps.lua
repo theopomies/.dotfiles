@@ -19,8 +19,7 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
--- ==============NAVIGATION===============
--- Regular
+-- Regular: use jklm instead of hjkl
 keymap("", "j", "<Left>", term_opts)
 keymap("", "k", "<Down>", term_opts)
 keymap("", "l", "<Up>", term_opts)
@@ -31,48 +30,53 @@ keymap("n", "<leader>j", "<C-w>h", opts)
 keymap("n", "<leader>k", "<C-w>j", opts)
 keymap("n", "<leader>l", "<C-w>k", opts)
 keymap("n", "<leader>m", "<C-w>l", opts)
--- =======================================
-
--- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<S-l>", ":bnext<CR>", opts)
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<C-m>", ":bnext<CR>", opts)
+keymap("n", "<C-j>", ":bprevious<CR>", opts)
 
--- Move text up and down
-keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
-keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
+-- Navigate blocks
+keymap("n", "(", "{", opts)
+keymap("n", ")", "}", opts)
 
--- Insert --
--- Press jk fast to enter
+-- Resize with arrows
+keymap("n", "<leader><Up>", ":resize -2<CR>", opts)
+keymap("n", "<leader><Down>", ":resize +2<CR>", opts)
+keymap("n", "<leader><Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<leader><Right>", ":vertical resize +2<CR>", opts)
+
+-- Move Text
+keymap("i", "<C-k>", "<ESC>:m .+1<CR>==gi", opts)
+keymap("i", "<C-l>", "<ESC>:m .-2<CR>==gi", opts)
+keymap("v", "p", '"_dP', opts)
+keymap("v", "K", ":m '>+1<CR>gv=gv", opts)
+keymap("v", "L", ":m '<-2<CR>gv=gv", opts)
+
+-- Escape insert mode
 keymap("i", "jk", "<ESC>", opts)
+keymap("i", "kj", "<ESC>", opts)
 
--- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
--- Move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
-keymap("v", "p", '"_dP', opts)
+-- Expect behavior like D C
+keymap("n", "Y", "y$", opts)
 
--- Visual Block --
--- Move text up and down
-keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
-keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
-keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+-- Keep it centered
+keymap("n", "n", "nzzv", opts)
+keymap("n", "N", "Nzzv", opts)
+keymap("n", "J", "mzJ`z", opts)
 
--- Terminal --
--- Better terminal navigation
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+-- Undo breakpoints
+keymap("i", ".", ".<c-g>u", opts)
+keymap("i", ",", ",<c-g>u", opts)
+keymap("i", ";", ";<c-g>u", opts)
+keymap("i", "?", "?<c-g>u", opts)
+keymap("i", "!", "!<c-g>u", opts)
 
+-- Marks
+keymap("n", "h", "m", opts)
+keymap("n", "H", "`", opts)
+keymap("n", "<leader>h", "'", opts)
 

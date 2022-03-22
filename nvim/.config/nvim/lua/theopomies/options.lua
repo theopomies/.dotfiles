@@ -7,6 +7,8 @@ local options = {
     mouse = "a",
     conceallevel = 0,
 
+    completeopt = {"menuone", "noinsert" , "noselect" },
+
     splitbelow = true,
     splitright = true,
 
@@ -35,7 +37,7 @@ local options = {
 
     errorbells = false,
     termguicolors = true,
-    showmode = false,
+    showmode = true,
     showtabline = 2,
     ls = 0,
     cmdheight = 2,
@@ -43,7 +45,6 @@ local options = {
     colorcolumn = "80",
     wrap = false,
 
-    timeoutlen = 100,
     updatetime = 50,
 }
 
