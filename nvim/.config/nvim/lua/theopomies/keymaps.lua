@@ -38,6 +38,8 @@ keymap("n", "<C-j>", ":bprevious<CR>", opts)
 -- Navigate blocks
 keymap("n", "(", "{", opts)
 keymap("n", ")", "}", opts)
+keymap("n", "{", "(", opts)
+keymap("n", "}", ")", opts)
 
 -- Resize with arrows
 keymap("n", "<leader><Up>", ":resize -2<CR>", opts)
@@ -51,6 +53,8 @@ keymap("i", "<C-l>", "<ESC>:m .-2<CR>==gi", opts)
 keymap("v", "p", '"_dP', opts)
 keymap("v", "K", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "L", ":m '<-2<CR>gv=gv", opts)
+keymap("n", "K", ":m .+1<CR>==", opts)
+keymap("n", "L", ":m .-2<CR>==", opts)
 
 -- Escape insert mode
 keymap("i", "jk", "<ESC>", opts)
@@ -64,8 +68,8 @@ keymap("v", ">", ">gv", opts)
 keymap("n", "Y", "y$", opts)
 
 -- Keep it centered
-keymap("n", "n", "nzzv", opts)
-keymap("n", "N", "Nzzv", opts)
+keymap("n", "n", "nzzzv", opts)
+keymap("n", "N", "Nzzzv", opts)
 keymap("n", "J", "mzJ`z", opts)
 
 -- Undo breakpoints
@@ -80,3 +84,11 @@ keymap("n", "h", "m", opts)
 keymap("n", "H", "`", opts)
 keymap("n", "<leader>h", "'", opts)
 
+-- QuickFix List
+-- TODO When needed
+
+-- Shift multiple lines
+keymap("n", "<TAB>", ":><CR>", opts)
+keymap("n", "<S-TAB>", ":<<CR>", opts)
+keymap("v", "<TAB>", ":'<,'>><CR>gv", opts)
+keymap("v", "<S-TAB>", ":'<,'><<CR>gv", opts)

@@ -9,6 +9,11 @@ local options = {
 
     completeopt = {"menuone", "noinsert" , "noselect" },
 
+    list = true,
+    listchars = { tab = "› ", eol = "¬", trail = "⋅" },
+
+    backspace = { "indent", "eol", "start" },
+
     splitbelow = true,
     splitright = true,
 
@@ -46,6 +51,8 @@ local options = {
     wrap = false,
 
     updatetime = 50,
+
+    hidden = true,
 }
 
 
