@@ -63,6 +63,7 @@ telescope.setup {
         ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
         ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
 
+        ["j"] = false,
         ["k"] = actions.move_selection_next,
         ["l"] = actions.move_selection_previous,
         ["K"] = actions.move_to_top,
@@ -106,3 +107,12 @@ telescope.setup {
 }
 
 telescope.load_extension("fzy_native")
+
+local opts = { noremap = true, silent = true }
+local keymap = vim.api.nvim_set_keymap
+
+keymap("n", "<leader>pl", "<cmd>Telescope live_grep<CR>", opts)
+keymap("n", "<leader>pf", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<leader>pb", "<cmd>Telescope buffers<CR>", opts)
+keymap("n", "<leader>ps", "<cmd>lua require('telescope.builtin')grep_string { search = vim.fn.expand('<cword>') }<CR>", opts)
+
