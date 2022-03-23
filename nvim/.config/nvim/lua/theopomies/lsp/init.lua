@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 require("theopomies.lsp.handlers").setup()
+require("theopomies.lsp.rust-analyzer").setup()
 
 local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap

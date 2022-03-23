@@ -42,7 +42,7 @@ local options = {
 
     errorbells = false,
     termguicolors = true,
-    showmode = true,
+    showmode = false,
     showtabline = 2,
     ls = 0,
     cmdheight = 2,

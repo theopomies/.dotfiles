@@ -3,6 +3,8 @@ if not rust_tools_status_ok then
   return
 end
 
+local M = {}
+
 local opts = {
     tools = { -- rust-tools options
         autoSetHints = true,
@@ -28,4 +30,8 @@ local opts = {
     },
 }
 
-rust_tools.setup(opts)
+M.setup = function()
+    rust_tools.setup(opts)
+end
+
+return M
