@@ -24,7 +24,7 @@ local options = {
     tabstop = 4,
     softtabstop = 4,
 
-    cursorline = false,
+    cursorline = true,
 
     number = true,
     signcolumn = "yes",
