@@ -1,6 +1,7 @@
 require("theopomies.options")
 require("theopomies.keymaps")
 require("theopomies.plugins")
+require("theopomies.impatient")
 require("theopomies.colorscheme")
 require("theopomies.cmp")
 require("theopomies.lsp")
