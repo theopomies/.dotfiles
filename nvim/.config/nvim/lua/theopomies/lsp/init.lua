@@ -35,7 +35,7 @@ augroup _lsp
     autocmd!
     autocmd BufWritePre * lua vim.lsp.buf.formatting_sync(nil, 200)
     autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
-    autocmd BufEnter,CursorHold,InsertLeave <buffer> lua vim.lsp.codelens.refresh()
+    autocmd BufEnter,CursorHold,InsertLeave,TextChanged <buffer> lua vim.lsp.codelens.refresh()
 augroup end
 ]])
 

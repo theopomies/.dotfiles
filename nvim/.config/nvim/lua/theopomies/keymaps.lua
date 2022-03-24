@@ -5,6 +5,7 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
+keymap("n", "<CR>", "<Nop>", term_opts)
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
@@ -88,8 +89,8 @@ keymap("n", "<leader>h", "'", opts)
 vim.cmd([[
 nnoremap <C-l> :cnext<CR>zz
 nnoremap <C-k> :cprev<CR>zz
-nnoremap <leader>l :lnext<CR>zz
-nnoremap <leader>k :lprev<CR>zz
+"nnoremap <leader>l :lnext<CR>zz
+"nnoremap <leader>k :lprev<CR>zz
 nnoremap <C-q> :call ToggleQFList(1)<CR>
 nnoremap <leader>q :call ToggleQFList(0)<CR>
 
