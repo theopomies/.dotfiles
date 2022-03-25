@@ -6,6 +6,7 @@ local options = {
     swapfile = false,
     mouse = "a",
     conceallevel = 0,
+    autoread = true,
 
     completeopt = {"menuone", "noinsert" , "noselect" },
 
