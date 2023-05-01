@@ -237,7 +237,7 @@ font:
     #  foreground: '#ffffff'
     #  background: '#000000'
 
-    #bar:
+    #footer.bar:
     #  background: '#c5c8c6'
     #  foreground: '#1d1f21'
 

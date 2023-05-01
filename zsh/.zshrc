@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/local/bin/:/Users/theopomies/.cargo/bin:$PATH"
+export PATH="/opt/homebrew/anaconda3/bin/:/opt/homebrew/bin:/opt/homebrew/sbin:usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/local/bin/:/Users/theopomies/.cargo/bin:Users/theopomies/.local/share/solana/install/active_release/bin:/Users/theopomies/Library/Python/3.10/bin:/Users/theopomies/Library/Python/3.9/bin:$PATH"
 export ZSH="/Users/theopomies/.oh-my-zsh"
 export EDITOR=nvim
 export VISUAL=nvim
@@ -15,7 +15,7 @@ plugins=(
 	rust
 	aliases
 	brew
-	vscode 
+	vscode
 	docker
 	docker-compose
 	zsh-autosuggestions
@@ -33,3 +33,34 @@ eval "$(zoxide init zsh)"
 
 source $ZSH/oh-my-zsh.sh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# bun completions
+[ -s "/Users/theopomies/.bun/_bun" ] && source "/Users/theopomies/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/theopomies/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+
+#eval "$(starship init zsh)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

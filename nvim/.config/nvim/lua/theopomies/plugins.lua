@@ -72,15 +72,19 @@ return packer.startup(function(use)
     use "hrsh7th/vim-vsnip"
 
     -- Treesitter
-    use {
-        "nvim-treesitter/nvim-treesitter",
-        run = ":TSUpdate",
-    }
+    --use {
+    --    "nvim-treesitter/nvim-treesitter",
+    --    run = ":TSUpdate",
+    --}
 
     -- ------------Languages--------------
     use "williamboman/nvim-lsp-installer"
     -- Rust
     use "simrat39/rust-tools.nvim"
+
+    -- Solidity
+    use "tomlion/vim-solidity"
+    use "sohkai/syntastic-local-solhint"
 
     -- -----------------------------------
     -- ===================================
@@ -91,7 +95,7 @@ return packer.startup(function(use)
 
     -- Git
     use "tpope/vim-fugitive"
-    use "lewis6991/gitsigns.nvim"
+    --use "lewis6991/gitsigns.nvim"
 
     -- Tpope the god
     use "tpope/vim-surround"
