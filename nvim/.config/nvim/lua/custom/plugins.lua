@@ -90,7 +90,7 @@ local plugins = {
 
   {
     "hrsh7th/nvim-cmp",
-    dependencies = { "copilot-cmp"},
+    dependencies = { "zbirenbaum/copilot-cmp" },
     opts = function()
       local M = require "plugins.configs.cmp"
       table.insert(M.sources, { name = "crates" })

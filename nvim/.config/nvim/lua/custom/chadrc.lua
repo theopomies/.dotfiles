@@ -5,8 +5,8 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "catppuccin",
-  theme_toggle = { "catppuccin", "one_light" },
+  theme = "chadracula",
+  theme_toggle = { "chadracula", "one_light" },
   tabufline = {
     lazyload = false
   },
