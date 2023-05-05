@@ -46,6 +46,15 @@ export PNPM_HOME="/Users/theopomies/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
+# java
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
+export ANDROID_HOME=~/Library/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+# java end
+
 
 #eval "$(starship init zsh)"
 

@@ -72,7 +72,7 @@ M.copilot = {
   },
 }
 
-M.lspconfig = {
+M.lspconfig_custom = {
   plugin = true,
   n = {
     ["<leader>fd"] = {
