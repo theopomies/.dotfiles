@@ -1,7 +1,7 @@
 import = ["/Users/theopomies/.config/alacritty/dracula.toml"]
 
 [shell]
-program = "/opt/homebrew/bin/fish"
+program = "/opt/homebrew/bin/zellij"
 
 [font]
 size = 16.0
