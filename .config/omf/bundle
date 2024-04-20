@@ -1,0 +1,4 @@
+package brew
+package https://github.com/dracula/fish
+package rustup
+theme default

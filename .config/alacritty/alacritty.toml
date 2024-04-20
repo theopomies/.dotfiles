@@ -1,0 +1,29 @@
+import = ["/Users/theopomies/.config/alacritty/dracula.toml"]
+
+[shell]
+program = "/opt/homebrew/bin/fish"
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "FiraCode Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[font.italic]
+family = "FiraCode Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[window]
+decorations = "none"
+opacity = 0.75
+startup_mode = "Maximized"
+

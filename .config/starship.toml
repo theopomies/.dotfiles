@@ -1,0 +1,168 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[█](color_green)\
+$os\
+$username\
+[](bg:color_purple fg:color_green)\
+$directory\
+[](fg:color_purple bg:color_pink)\
+$git_branch\
+$git_status\
+[](fg:color_pink bg:color_cyan)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:color_cyan bg:color_bg1)\
+$docker_context\
+$conda\
+[](fg:color_bg1 bg:color_bg1)\
+$time\
+[█ ](fg:color_bg1)\
+$line_break$character"""
+
+palette = 'dracula'
+
+[palettes.dracula]
+color_bg3 = '#F8F8F2'
+color_bg1 = '#282A36'
+color_fg0 = '#44475A'
+color_cyan = '#8be9fd'
+color_green = '#50fa7b'
+color_orange = '#FFB86C'
+color_pink = '#ff79c6'
+color_purple = '#bd93f9'
+color_red = '#ff5555'
+color_yellow = '#f1fa8c'
+
+[os]
+disabled = false
+style = "bg:color_green fg:color_bg1"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[username]
+show_always = true
+style_user = "bold bg:color_green fg:color_bg1"
+style_root = "bold bg:color_green fg:color_bg1"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:color_bg1 bg:color_purple"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:color_pink"
+format = '[[ $symbol $branch ](fg:color_bg1 bg:color_pink)]($style)'
+
+[git_status]
+style = "bg:color_pink"
+format = '[[($all_status$ahead_behind )](fg:color_bg1 bg:color_pink)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:color_cyan"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_cyan)]($style)'
+
+[c]
+symbol = " "
+style = "bg:color_cyan"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_cyan)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:color_cyan"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_cyan)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:color_cyan"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_cyan)]($style)'
+
+[php]
+symbol = ""
+style = "bg:color_cyan"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_cyan)]($style)'
+
+[java]
+symbol = " "
+style = "bg:color_cyan"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_cyan)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:color_cyan"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_cyan)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:color_cyan"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_cyan)]($style)'
+
+[python]
+symbol = ""
+style = "bg:color_cyan"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_cyan)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:color_bg3"
+format = '[[ $symbol( $context) ](fg:#6272A4 bg:color_bg3)]($style)'
+
+[conda]
+style = "bg:color_bg3"
+format = '[[ $symbol( $environment) ](fg:#6272A4 bg:color_bg3)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:color_bg1"
+format = '[[  $time ](fg:color_bg3 bg:color_bg1)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[█](bold fg:color_green bg:color_bg1)[INSERT](bold fg:color_bg1 bg:color_green)[](bold fg:color_green bg:color_bg1)'
+error_symbol = '[█](bold fg:color_red bg:color_bg1)[INSERT](bold fg:color_bg1 bg:color_red)[](bold fg:color_red bg:color_bg1)'
+vimcmd_symbol = '[█](bold fg:color_purple bg:color_bg1)[NORMAL](bold fg:color_bg1 bg:color_purple)[](bold fg:color_purple bg:color_bg1)'
+vimcmd_replace_one_symbol = '[█](bold fg:color_red bg:color_bg1)[REPLACE](bold fg:color_bg1 bg:color_red)[](bold fg:color_red bg:color_bg1)'
+vimcmd_replace_symbol = '[█](bold fg:color_red bg:color_bg1)[REPLACE](bold fg:color_bg1 bg:color_red)[](bold fg:color_red bg:color_bg1)'
+vimcmd_visual_symbol = '[█](bold fg:color_yellow bg:color_bg1)[VISUAL](bold fg:color_bg1 bg:color_yellow)[](bold fg:color_yellow bg:color_bg1)'
