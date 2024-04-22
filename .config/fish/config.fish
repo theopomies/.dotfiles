@@ -1,9 +1,18 @@
 # Theme
-fish_config theme choose Dracula
+fish_config theme choose "Dracula Official"
 
 set EDITOR nvim
 set VISUAL nvim
 set SHELL /opt/homebrew/bin/fish
+
+# java
+set JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
+set ANDROID_HOME ~/Library/Android/Sdk
+set PATH $PATH $ANDROID_HOME/emulator
+set PATH $PATH $ANDROID_HOME/tools
+set PATH $PATH $ANDROID_HOME/tools/bin
+set PATH $PATH $ANDROID_HOME/platform-tools
+# java end
 
 # Abbrevations
 abbr v nvim

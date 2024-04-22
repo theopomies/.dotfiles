@@ -1,4 +1,7 @@
+package android-sdk
 package brew
+package foreign-env
 package https://github.com/dracula/fish
+package nvm
 package rustup
 theme default
