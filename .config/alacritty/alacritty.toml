@@ -25,5 +25,6 @@ style = "Regular"
 [window]
 decorations = "none"
 opacity = 0.75
-startup_mode = "Maximized"
+# startup_mode = "Maximized"
+startup_mode = "Fullscreen"
 

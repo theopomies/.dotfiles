@@ -1,11 +1,14 @@
 # Theme
 fish_config theme choose "Dracula Official"
 
+# Disable the original greeting
+set -g fish_greeting
+
 set EDITOR nvim
 set VISUAL nvim
 set SHELL /opt/homebrew/bin/fish
 
-# java
+# java (for React Native)
 set JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
 set ANDROID_HOME ~/Library/Android/Sdk
 set PATH $PATH $ANDROID_HOME/emulator
