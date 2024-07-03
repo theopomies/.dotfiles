@@ -6,21 +6,18 @@ set -g fish_greeting
 
 set EDITOR nvim
 set VISUAL nvim
-set SHELL /opt/homebrew/bin/fish
-
-# java (for React Native)
-set JAVA_HOME "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
-set ANDROID_HOME ~/Library/Android/Sdk
-set PATH $PATH $ANDROID_HOME/emulator
-set PATH $PATH $ANDROID_HOME/tools
-set PATH $PATH $ANDROID_HOME/tools/bin
-set PATH $PATH $ANDROID_HOME/platform-tools
-# java end
+set SHELL /usr/bin/fish
 
 # Abbrevations
+abbr n nvim
 abbr v nvim
 abbr vi nvim
 abbr vim nvim
+
+abbr tree lsd --tree
+
+abbr vpnu "sudo wg-quick up   /etc/wireguard/rhinov-vpn.conf"
+abbr vpnd "sudo wg-quick down /etc/wireguard/rhinov-vpn.conf"
 
 # Rust-powered tmux
 abbr zn zellij
