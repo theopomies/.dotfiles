@@ -548,7 +548,6 @@ require('lazy').setup({
           -- code, if the language server you are using supports them
           --
           -- This may be unwanted, since they displace some of your code
-          -- NOTE: This requires nightly neovim
           if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
             vim.lsp.inlay_hint.enable(true)
             map('<leader>th', function()
@@ -577,7 +576,15 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         -- gopls = {},
-        -- pyright = {},
+        basedpyright = {
+          settings = {
+            basedpyright = {
+              analysis = {
+                typeCheckingMode = 'standard',
+              },
+            },
+          },
+        }, -- TODO: configure
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
