@@ -142,8 +142,8 @@ format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_cyan)]($style)'
 
 [docker_context]
 symbol = ""
-style = "bg:color_bg3"
-format = '[[ $symbol( $context) ](fg:#6272A4 bg:color_bg3)]($style)'
+style = "bg:color_bg1"
+format = '[[ $symbol( $context) ](fg:color_bg3 bg:color_bg1)]($style)'
 
 [conda]
 style = "bg:color_bg3"

@@ -1,0 +1,107 @@
+[
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      ";": "command_palette::Toggle",
+      "\\": "project_panel::ToggleFocus",
+      "g r": "editor::FindAllReferences",
+      "shift-k": "editor::Hover",
+      "space x": "pane::CloseActiveItem",
+      "space b": "editor::ToggleGitBlame",
+      "space d": "diagnostics::Deploy",
+      "space space": "tab_switcher::Toggle",
+      "space r n": "editor::Rename",
+      "space c a": "editor::ToggleCodeActions",
+      "space c p": "pane::CloseActiveItem",
+      "space f m": "editor::Format",
+      "space f f": "file_finder::Toggle",
+      "space t p": "project_panel::ToggleFocus",
+      "space t c": "assistant::ToggleFocus",
+      "space t T": "workspace::NewCenterTerminal",
+      "space t t": "terminal_panel::ToggleFocus",
+      "space t f": "workspace::CloseAllDocks",
+      "space t i": "assistant::InlineAssist",
+      "space t h": "editor::ToggleInlayHints",
+      "space s f": "file_finder::Toggle",
+      "space s g": "workspace::NewSearch",
+      "space s c": "buffer_search::Deploy",
+      "space s S": "project_symbols::Toggle",
+      "space s s": "outline::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-y": "menu::Confirm"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "ctrl-y": "editor::ConfirmCompletion"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !VimObject",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "Dock || Terminal || Editor",
+    "bindings": {
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "ctrl-x": "pane::CloseActiveItem",
+      "ctrl-tab": "tab_switcher::Toggle"
+    }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "\\": "workspace::CloseAllDocks"
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      "space f f": "file_finder::Toggle",
+      "space t p": "project_panel::ToggleFocus",
+      "space t c": "assistant::ToggleFocus",
+      "space t T": "workspace::NewCenterTerminal",
+      "space t t": "terminal_panel::ToggleFocus",
+      "space t f": "workspace::CloseAllDocks",
+      "space t i": "assistant::InlineAssist",
+      "space t h": "editor::ToggleInlayHints",
+      "space s f": "file_finder::Toggle",
+      "space s g": "workspace::NewSearch",
+      "space s c": "buffer_search::Deploy",
+      "space s S": "project_symbols::Toggle",
+      "space s s": "outline::Toggle"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      ":": "command_palette::Toggle",
+      "a": "project_panel::NewFile",
+      "/": "project_panel::NewSearchInDirectory",
+      "d": "project_panel::Delete",
+      "y": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "enter": "project_panel::OpenPermanent",
+      "h": "project_panel::CollapseSelectedEntry",
+      "j": "menu::SelectNext",
+      "k": "menu::SelectPrev",
+      "l": "project_panel::ExpandSelectedEntry",
+      "o": "project_panel::OpenPermanent",
+      "r": "project_panel::Rename",
+      "x": "project_panel::RevealInFileManager",
+      "shift-g": "menu::SelectLast",
+      "g g": "menu::SelectFirst",
+      "-": "project_panel::SelectParent"
+    }
+  }
+]

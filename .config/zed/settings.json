@@ -1,0 +1,90 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed"s default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "Vagabond Dark",
+  "show_inline_completions": true,
+  "languages": {
+    "TSX": {
+      "show_inline_completions": true
+    }
+  },
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-20240620"
+    },
+    "version": "2"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "right",
+    "button": false
+  },
+  "notification_panel": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": false,
+    "dock": "right"
+  },
+  "terminal": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "buffer_font_size": 18,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_features": {
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true,
+    "calt": true,
+    "dlig": true
+  },
+  "autosave": "on_focus_change",
+  "slash_commands": {
+    // Settings for the `/docs` slash command.
+    "docs": {
+      // Whether `/docs` is enabled.
+      "enabled": true
+    },
+    // Settings for the `/project` slash command.
+    "project": {
+      // Whether `/project` is enabled.
+      "enabled": true
+    }
+  },
+  "features": {
+    "inline_completion_provider": "supermaven"
+  },
+  "cursor_blink": false,
+  "relative_line_numbers": true,
+  "scrollbar": {
+    "show": "never"
+  },
+  "vertical_scroll_margin": 0,
+  "tab_bar": {
+    "show": false
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": false
+  }
+}

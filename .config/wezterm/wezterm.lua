@@ -1,25 +1,24 @@
 local wezterm = require("wezterm")
-local mux = wezterm.mux
+-- local mux = wezterm.mux
 
-wezterm.on("gui-startup", function(cmd)
-	local tab, pane, window = mux.spawn_window(cmd or {})
-	local gui_window = window:gui_window()
-	gui_window:maximize()
-end)
+-- wezterm.on("gui-startup", function(cmd)
+-- 	local tab, pane, window = mux.spawn_window(cmd or {})
+-- 	local gui_window = window:gui_window()
+-- 	gui_window:perform_action(wezterm.action.ToggleFullScreen, pane)
+-- end)
 
 local config = wezterm.config_builder()
 
 config.color_scheme = "Dracula"
 
-config.default_prog = { "/home/theopomies/.cargo/bin/zellij" }
+config.default_prog = { "/opt/homebrew/bin/zellij" }
 
-config.font_size = 16.0
+config.font_size = 19.0
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 
 config.enable_tab_bar = false
-config.window_background_opacity = 0.8
-config.window_decorations = "NONE"
-
+config.window_background_opacity = 0.7
+config.window_decorations = "RESIZE | MACOS_FORCE_ENABLE_SHADOW"
 config.macos_window_background_blur = 30
 
 config.window_padding = {
