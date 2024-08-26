@@ -22,7 +22,10 @@
     "version": "2"
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "right",
+    "scrollbar": {
+      "show": "never"
+    }
   },
   "outline_panel": {
     "dock": "right",

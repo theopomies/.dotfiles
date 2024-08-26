@@ -1,5 +1,10 @@
 [
   {
+    "bindings": {
+      "ctrl-y": "menu::Confirm"
+    }
+  },
+  {
     "context": "VimControl && !menu",
     "bindings": {
       ";": "command_palette::Toggle",
@@ -30,14 +35,13 @@
     }
   },
   {
-    "bindings": {
-      "ctrl-y": "menu::Confirm"
-    }
-  },
-  {
     "context": "vim_mode == insert",
     "bindings": {
-      "ctrl-y": "editor::ConfirmCompletion"
+      "ctrl-y": "editor::ConfirmCompletion",
+      "ctrl-h": "vim::Left",
+      "ctrl-j": "vim::Down",
+      "ctrl-k": "vim::Up",
+      "ctrl-l": "vim::Right"
     }
   },
   {
@@ -48,14 +52,19 @@
     }
   },
   {
-    "context": "Dock || Terminal || Editor",
+    "context": "(Dock || Terminal || Editor) && vim_mode != insert",
     "bindings": {
       "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
       "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      "ctrl-x": "pane::CloseActiveItem",
       "ctrl-tab": "tab_switcher::Toggle"
+    }
+  },
+  {
+    "context": "Dock || Terminal",
+    "bindings": {
+      "ctrl-x": "pane::CloseActiveItem"
     }
   },
   {
@@ -102,6 +111,15 @@
       "shift-g": "menu::SelectLast",
       "g g": "menu::SelectFirst",
       "-": "project_panel::SelectParent"
+    }
+  },
+  {
+    "context": "Editor && mode == full && inline_completion",
+    "bindings": {
+      "ctrl-n": "editor::NextInlineCompletion",
+      "ctrl-p": "editor::PreviousInlineCompletion",
+      "ctrl-y": "editor::AcceptInlineCompletion",
+      "ctrl-tab": "editor::AcceptPartialInlineCompletion"
     }
   }
 ]
