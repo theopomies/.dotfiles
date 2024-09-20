@@ -17,6 +17,8 @@ return {
     theme = 'dracula-nvim',
     filesystem = {
       window = {
+        position = 'right',
+        width = 25,
         mappings = {
           ['\\'] = 'close_window',
         },

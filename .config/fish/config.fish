@@ -8,6 +8,8 @@ set EDITOR nvim
 set VISUAL nvim
 set SHELL /opt/homebrew/bin/fish
 
+set DENO_INSTALL /Users/theopomies/.deno
+fish_add_path "$DENO_INSTALL/bin"
 fish_add_path "/Users/theopomies/.bun/bin"
 
 # Abbrevations

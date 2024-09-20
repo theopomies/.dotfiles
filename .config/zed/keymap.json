@@ -17,7 +17,7 @@
       "space space": "tab_switcher::Toggle",
       "space r n": "editor::Rename",
       "space c a": "editor::ToggleCodeActions",
-      "space c p": "pane::CloseActiveItem",
+      "space p c": "pane::CloseActiveItem",
       "space f m": "editor::Format",
       "space f f": "file_finder::Toggle",
       "space t p": "project_panel::ToggleFocus",
@@ -65,6 +65,12 @@
     "context": "Dock || Terminal",
     "bindings": {
       "ctrl-x": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-i": "assistant::InlineAssist"
     }
   },
   {

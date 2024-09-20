@@ -8,7 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   "theme": "Vagabond Dark",
-  "show_inline_completions": true,
+  "show_inline_completions": false,
   "languages": {
     "TSX": {
       "show_inline_completions": true
@@ -84,10 +84,12 @@
   },
   "vertical_scroll_margin": 0,
   "tab_bar": {
-    "show": false
+    "show_nav_history_buttons": false
+    // "show": false
   },
   "toolbar": {
     "breadcrumbs": true,
     "quick_actions": false
-  }
+  },
+  "soft_wrap": "editor_width"
 }
