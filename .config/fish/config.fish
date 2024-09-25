@@ -21,9 +21,6 @@ abbr vim nvim
 alias myls /Users/theopomies/projects/rust/lsd/target/release/lsd
 alias mytree "/Users/theopomies/projects/rust/lsd/target/release/lsd --tree"
 
-abbr vpnu "sudo wg-quick up   /etc/wireguard/rhinov-vpn.conf"
-abbr vpnd "sudo wg-quick down /etc/wireguard/rhinov-vpn.conf"
-
 # Rust-powered tmux
 abbr zn zellij
 abbr za zellij a

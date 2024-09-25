@@ -612,7 +612,7 @@ background-opacity = 0.8
 # rendering issues as well as performance issues.
 # 
 # This is only supported on macOS.
-background-blur-radius = 30
+background-blur-radius = 50
 
 # The opacity level (opposite of transparency) of an unfocused split.
 # Unfocused splits by default are slightly faded out to make it easier to see
@@ -647,8 +647,7 @@ unfocused-split-fill =
 # If you're using the `ghostty` CLI there is also a shortcut to run a command
 # with arguments directly: you can use the `-e` flag. For example: `ghostty -e
 # fish --with --custom --args`.
-command = /opt/homebrew/bin/zellij
-# command = /bin/sh
+command = /bin/zsh
 
 # If true, keep the terminal open after the command exits. Normally, the
 # terminal window closes when the running command (such as a shell) exits.
@@ -822,6 +821,7 @@ working-directory =
 #   * `keybind=clear` will clear all set keybindings. Warning: this
 #     removes ALL keybindings up to this point, including the default
 #     keybindings.
+keybind = clear
 keybind = super+page_up=scroll_page_up
 keybind = super+shift+up=jump_to_prompt:-1
 keybind = super+physical:four=goto_tab:4

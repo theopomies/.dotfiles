@@ -47,5 +47,8 @@ return {
       'rcarriga/nvim-notify',
     },
     opts = {},
+    -- lazy.nvim
   },
+
+  require 'custom.plugins.xcodebuild',
 }

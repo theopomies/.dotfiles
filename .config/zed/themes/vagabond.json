@@ -70,7 +70,7 @@
         "editor.invisible": null,
         "editor.document_highlight.read_background": null,
         "editor.document_highlight.write_background": null,
-        "terminal.background": "#1c1c1c",
+        "terminal.background": "#1c1c1cd7",
         "terminal.foreground": "#bcbcbc",
         "terminal.bright_foreground": null,
         "terminal.dim_foreground": null,

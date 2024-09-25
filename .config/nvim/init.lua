@@ -610,6 +610,10 @@ require('lazy').setup({
         -- But for many setups, the LSP (`tsserver`) will work just fine
         tsserver = {},
         --
+        clangd = {
+          filetypes = { 'cuda' },
+          -- cmd = { 'sourcekit-lsp' },
+        },
 
         lua_ls = {
           -- cmd = {...},
@@ -656,6 +660,19 @@ require('lazy').setup({
             server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
             require('lspconfig')[server_name].setup(server)
           end,
+        },
+      }
+      local lspconfig = require 'lspconfig'
+      lspconfig.sourcekit.setup {
+        cmd = { 'sourcekit-lsp' },
+        filetypes = { 'swift', 'c', 'cpp', 'objective-c', 'objective-cpp', 'objc', 'objcpp' },
+        root_dir = lspconfig.util.root_pattern('Package.swift', 'buildServer.json', 'compile_commands.json', '.git'),
+        capabilities = {
+          workspace = {
+            didChangeWatchedFiles = {
+              dynamicRegistration = true,
+            },
+          },
         },
       }
 
