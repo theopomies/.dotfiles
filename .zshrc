@@ -61,5 +61,3 @@ alias la="mylsd -la"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-
-neofetch
