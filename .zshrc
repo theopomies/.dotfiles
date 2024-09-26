@@ -59,5 +59,6 @@ alias myip="ifconfig -u | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2 | head
 alias mylsd="~/projects/perso/rust/lsd/target/release/lsd"
 alias la="mylsd -la"
 
-eval "$(starship init zsh)"
+source <(fzf --zsh)
 eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
