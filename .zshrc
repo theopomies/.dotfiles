@@ -7,13 +7,19 @@ ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Add in zsh plugins
+source $HOME/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.sh
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
+zinit light dracula/zsh
+zinit ice depth=1
+zinit light jeffreytse/zsh-vi-mode
 
 # Load completions
 autoload -Uz compinit && compinit
 zinit cdreplay -q
+
+ZSH_THEME="dracula"
 
 # If you come from bash you might have to change your $PATH.
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/local/bin/:/Users/theopomies/.cargo/bin:Users/theopomies/.local/share/solana/install/active_release/bin:/Users/theopomies/Library/Python/3.10/bin:/Users/theopomies/Library/Python/3.9/bin:$PATH"
@@ -50,6 +56,10 @@ export PATH=$PATH:$HOME/.maestro/bin
 alias n="nvim"
 alias vim="nvim"
 alias myip="ifconfig -u | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2 | head -1"
+alias mylsd="~/projects/perso/rust/lsd/target/release/lsd"
+alias la="mylsd -la"
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+
+neofetch
