@@ -19,6 +19,11 @@ zinit light jeffreytse/zsh-vi-mode
 autoload -Uz compinit && compinit
 zinit cdreplay -q
 
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+
 ZSH_THEME="dracula"
 
 # If you come from bash you might have to change your $PATH.
