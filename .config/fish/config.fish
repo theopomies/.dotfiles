@@ -4,8 +4,8 @@ fish_config theme choose "Dracula Official"
 # Disable the original greeting
 set -g fish_greeting
 
-set EDITOR nvim
-set VISUAL nvim
+set EDITOR /opt/homebrew/bin/nvim
+set VISUAL /opt/homebrew/bin/nvim
 set SHELL /opt/homebrew/bin/fish
 
 set DENO_INSTALL /Users/theopomies/.deno

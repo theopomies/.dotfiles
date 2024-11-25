@@ -647,7 +647,7 @@ unfocused-split-fill =
 # If you're using the `ghostty` CLI there is also a shortcut to run a command
 # with arguments directly: you can use the `-e` flag. For example: `ghostty -e
 # fish --with --custom --args`.
-command = /bin/zsh
+command = /opt/homebrew/bin/fish
 
 # If true, keep the terminal open after the command exits. Normally, the
 # terminal window closes when the running command (such as a shell) exits.

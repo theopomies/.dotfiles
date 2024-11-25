@@ -566,7 +566,6 @@ require('lazy').setup({
           --
           -- This may be unwanted, since they displace some of your code
           if client and client.server_capabilities.inlayHintProvider and vim.lsp.inlay_hint then
-            vim.lsp.inlay_hint.enable(true)
             map('<leader>th', function()
               vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled {})
             end, '[T]oggle Inlay [H]ints')
@@ -612,8 +611,8 @@ require('lazy').setup({
         ts_ls = {},
         --
         clangd = {
-          filetypes = { 'cuda' },
-          -- cmd = { 'sourcekit-lsp' },
+          -- filetypes = { 'cuda' },
+          cmd = { 'sourcekit-lsp' },
         },
 
         lua_ls = {
@@ -666,8 +665,6 @@ require('lazy').setup({
       local lspconfig = require 'lspconfig'
       lspconfig.sourcekit.setup {
         cmd = { 'sourcekit-lsp' },
-        filetypes = { 'swift', 'c', 'cpp', 'objective-c', 'objective-cpp', 'objc', 'objcpp' },
-        root_dir = lspconfig.util.root_pattern('Package.swift', 'buildServer.json', 'compile_commands.json', '.git'),
         capabilities = {
           workspace = {
             didChangeWatchedFiles = {

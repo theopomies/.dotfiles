@@ -61,9 +61,11 @@ export PATH=$PATH:$HOME/.maestro/bin
 alias n="nvim"
 alias vim="nvim"
 alias myip="ifconfig -u | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2 | head -1"
-alias mylsd="~/projects/perso/rust/lsd/target/release/lsd"
+alias mylsd="~/Developer/perso/rust/lsd/target/release/lsd"
 alias la="mylsd -la"
 
 source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+PATH=~/.console-ninja/.bin:$PATH

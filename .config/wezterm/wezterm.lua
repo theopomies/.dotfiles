@@ -11,7 +11,7 @@ local config = wezterm.config_builder()
 
 config.color_scheme = "Dracula"
 
-config.default_prog = { "/opt/homebrew/bin/zellij" }
+config.default_prog = { "/opt/homebrew/bin/fish" }
 
 config.font_size = 19.0
 config.font = wezterm.font("JetBrainsMono Nerd Font")
