@@ -28,7 +28,7 @@ $time\
 [█ ](fg:color_bg1)\
 $line_break$character"""
 
-palette = 'dracula'
+palette = 'poimandres'
 
 [palettes.dracula]
 color_bg3 = '#F8F8F2'
@@ -41,6 +41,19 @@ color_pink = '#ff79c6'
 color_purple = '#bd93f9'
 color_red = '#ff5555'
 color_yellow = '#f1fa8c'
+
+[palettes.poimandres]
+color_bg3 = '#E4F0FB'
+color_bg1 = '#1b1e28'
+color_fg0 = '#44475A'
+color_cyan = '#8be9fd'
+color_green = '#5de4c7'
+color_orange = '#89ddff'
+color_pink = '#5de4c7'
+color_purple = '#E4F0FB'
+color_red = '#E4F0FB'
+color_yellow = '#fffac2'
+
 
 [os]
 disabled = false

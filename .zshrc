@@ -26,7 +26,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 
-ZSH_THEME="dracula"
+# ZSH_THEME="dracula"
 
 # If you come from bash you might have to change your $PATH.
 export PATH="/opt/homebrew/opt/openjdk@17/bin:/opt/homebrew/opt/openjdk/bin:/opt/homebrew/bin:/opt/homebrew/sbin:usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/local/bin/:/Users/theopomies/.cargo/bin:Users/theopomies/.local/share/solana/install/active_release/bin:/Users/theopomies/Library/Python/3.10/bin:/Users/theopomies/Library/Python/3.9/bin:$PATH"
@@ -39,6 +39,7 @@ export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
 export DENO_INSTALL="/Users/theopomies/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+export EPICSHOP_EDITOR=cursor
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -65,6 +66,7 @@ alias vim="nvim"
 alias myip="ifconfig -u | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2 | head -1"
 alias mylsd="~/Developer/perso/rust/lsd/target/release/lsd"
 alias la="mylsd -la"
+alias ls="mylsd"
 
 source <(fzf --zsh)
 eval "$(zoxide init zsh)"
