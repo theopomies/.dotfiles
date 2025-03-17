@@ -22,7 +22,7 @@
         "element.active": null,
         "element.selected": "#30334080",
         "element.disabled": null,
-        "drop_target.background": "#506477",
+        "drop_target.background": "#30334080",
         "ghost_element.background": "#14161B00",
         "ghost_element.hover": "#3033400a",
         "ghost_element.active": null,
@@ -57,7 +57,7 @@
         "editor.background": "#14161B00",
         "editor.gutter.background": "#14161B00",
         "editor.subheader.background": null,
-        "editor.active_line.background": "#3033400a",
+        "editor.active_line.background": "#30334080",
         "editor.highlighted_line.background": null,
         "editor.line_number": "#767c9d50",
         "editor.indent_guide_active": "#a6accd",
@@ -102,11 +102,11 @@
         "created": "#5fb3a1",
         "created.background": "#1b1e28",
         "created.border": "#ffffff10",
-        "git.created": "#5fb3a1",
+        "version_control.added": "#5fb3a1",
         "deleted": "#d0679d",
         "deleted.background": "#1b1e28",
         "deleted.border": "#ffffff10",
-        "git.deleted": "#d0679d",
+        "version_control.deleted": "#d0679d",
         "error": "#d0679d",
         "error.background": "#1b1e28",
         "error.border": "#ffffff10",
@@ -126,6 +126,8 @@
         "modified": "#ADD7FF",
         "modified.background": "#1b1e28",
         "modified.border": "#ffffff10",
+        "version_control.modified": "#ADD7FF",
+        "version_control.renamed": "#ADD7FF",
         "predictive": null,
         "predictive.background": "#1b1e28",
         "predictive.border": "#ffffff10",
@@ -141,7 +143,12 @@
         "warning": "#fffac2",
         "warning.background": "#14161B",
         "warning.border": "#ffffff10",
-        "players": [],
+        "players": [
+          {
+            "selection": "#5DE4c720",
+            "cursor": "#5DE4c7"
+          }
+        ],
         "syntax": {
           "attribute": {
             "color": "#91B4D5",
@@ -189,6 +196,11 @@
             "font_weight": null
           },
           "operator": {
+            "color": "#add7ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "keyword.operator": {
             "color": "#add7ff",
             "font_style": "italic",
             "font_weight": null
