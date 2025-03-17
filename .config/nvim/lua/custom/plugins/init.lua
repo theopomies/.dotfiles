@@ -19,14 +19,14 @@ return {
     -- optionally set the colorscheme within lazy config
     init = function()
       vim.cmd.colorscheme 'poimandres'
-    end
+    end,
   },
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     opts = {
       -- theme = 'dracula-nvim',
-      theme = 'poimandres'
+      theme = 'poimandres',
     },
   },
 
@@ -34,7 +34,7 @@ return {
   {
     'mrcjkb/rustaceanvim',
     version = '^4', -- Recommended
-    lazy = false,   -- This plugin is already lazy
+    lazy = false, -- This plugin is already lazy
   },
 
   {
@@ -56,8 +56,8 @@ return {
       require('nvim-ts-autotag').setup {
         opts = {
           -- Defaults
-          enable_close = true,           -- Auto close tags
-          enable_rename = true,          -- Auto rename pairs of tags
+          enable_close = true, -- Auto close tags
+          enable_rename = true, -- Auto rename pairs of tags
           enable_close_on_slash = false, -- Auto close on trailing </
         },
       }
@@ -91,6 +91,14 @@ return {
     'MeanderingProgrammer/render-markdown.nvim',
     opts = {
       file_types = { 'markdown', 'Avante' },
+      code = {
+        disable_background = true,
+        style = 'language',
+        -- Optional: Set highlight groups to NONE to enforce no background
+        highlight = 'NONE', -- For code blocks
+        highlight_language = 'NONE',
+        highlight_inline = 'NONE', -- For inline code
+      },
     },
     ft = { 'markdown', 'Avante' },
   },

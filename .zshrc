@@ -67,9 +67,15 @@ alias myip="ifconfig -u | grep 'inet ' | grep -v 127.0.0.1 | cut -d\  -f2 | head
 alias mylsd="~/Developer/perso/rust/lsd/target/release/lsd"
 alias la="mylsd -la"
 alias ls="mylsd"
+alias note="cursor ~/Developer/perso/theopomies.com/"
+
 
 source <(fzf --zsh)
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
+# bun completions
+[ -s "/Users/theopomies/.bun/_bun" ] && source "/Users/theopomies/.bun/_bun"
 
+export PATH="$PATH:/Users/theopomies/.modular/bin"
+eval "$(magic completion --shell zsh)"

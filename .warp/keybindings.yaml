@@ -1,4 +1,5 @@
 ---
+"terminal:accept_prompt_suggestions": ctrl-y
+"editor:previous_find_match": ctrl-p
 "editor_view:insert_autosuggestion": ctrl-y
 "editor:next_find_match": ctrl-n
-"editor:previous_find_match": ctrl-p

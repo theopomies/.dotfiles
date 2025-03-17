@@ -194,7 +194,9 @@ grapheme-width-method = unicode
 # directories.
 # theme =
 # theme = Dracula
-theme = Andromeda
+# theme = Andromeda
+# theme = electron-highlighter
+theme = poimandres
 
 # Background color for the window.
 # background = #282c34

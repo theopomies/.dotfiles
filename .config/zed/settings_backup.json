@@ -7,38 +7,17 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "theopoimandres (blurred)",
-  "show_edit_predictions": true,
-  "inlay_hints": {
-    "enabled": false
-  },
-  "show_completion_documentation": true,
+  "theme": "Vagabond Dark",
+  "show_inline_completions": false,
   "languages": {
     "TSX": {
-      "show_edit_predictions": true
-    },
-    "Python": {
-      "language_servers": ["basedpyright", "ruff"],
-      "format_on_save": "on",
-      "formatter": [
-        {
-          "code_actions": {
-            "source.organizeImports.ruff": true,
-            "source.fixAll.ruff": true
-          }
-        },
-        {
-          "language_server": {
-            "name": "ruff"
-          }
-        }
-      ]
+      "show_inline_completions": true
     }
   },
   "assistant": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "provider": "ollama",
+      "model": "gemma3:12b"
     },
     "version": "2"
   },
@@ -67,7 +46,7 @@
   },
   "vim_mode": true,
   "base_keymap": "VSCode",
-  "buffer_font_size": 17,
+  "buffer_font_size": 18,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_features": {
     "ss01": true,
@@ -84,9 +63,6 @@
   },
   "autosave": "on_focus_change",
   "slash_commands": {
-    "cargo_workspace": {
-      "enabled": true
-    },
     // Settings for the `/docs` slash command.
     "docs": {
       // Whether `/docs` is enabled.
