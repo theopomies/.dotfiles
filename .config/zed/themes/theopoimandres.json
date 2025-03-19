@@ -67,8 +67,8 @@
         "editor.active_wrap_guide": "#00000030",
         "editor.document_highlight.read_background": null,
         "editor.document_highlight.write_background": null,
-        "terminal.background": "#1b1e28D0",
-        "terminal.foreground": "#a6accd",
+        "terminal.background": "#14161B00",
+        "terminal.foreground": "#e4f0fb",
         "terminal.bright_foreground": null,
         "terminal.dim_foreground": null,
         "terminal.ansi.black": "#1b1e28",
@@ -147,6 +147,42 @@
           {
             "selection": "#5DE4c720",
             "cursor": "#5DE4c7"
+          },
+          {
+            "selection": "#ADD7FF20",
+            "cursor": "#ADD7FF"
+          },
+          {
+            "selection": "#d0679d20",
+            "cursor": "#d0679d"
+          },
+          {
+            "selection": "#fffac220",
+            "cursor": "#fffac2"
+          },
+          {
+            "selection": "#767c9d20",
+            "cursor": "#767c9d"
+          },
+          {
+            "selection": "#91B4D520",
+            "cursor": "#91B4D5"
+          },
+          {
+            "selection": "#7390AA20",
+            "cursor": "#7390AA"
+          },
+          {
+            "selection": "#5fb3a120",
+            "cursor": "#5fb3a1"
+          },
+          {
+            "selection": "#c4a7e720",
+            "cursor": "#c4a7e7"
+          },
+          {
+            "selection": "#f5a97f20",
+            "cursor": "#f5a97f"
           }
         ],
         "syntax": {

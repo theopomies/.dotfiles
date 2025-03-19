@@ -275,9 +275,9 @@ themes {
         white 255 255 255
     }
 
-    poimandres {
+    theopoimandres {
         fg 228 240 251
-        bg 27 30 40
+        bg 24 25 29
         red 208 103 157
         green 93 228 199
         yellow 255 250 194
@@ -285,7 +285,7 @@ themes {
         magenta 252 197 233
         orange 208 103 157
         cyan 137 221 255
-        black 23 25 34
+        black 24 25 29
         white 255 255 255
     }
 }
@@ -293,7 +293,7 @@ themes {
 // Choose the theme that is specified in the themes section.
 // Default: default
 //
-theme "poimandres"
+theme "theopoimandres"
 
 // The name of the default layout to load on startup
 // Default: "default"

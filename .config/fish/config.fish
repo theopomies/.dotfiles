@@ -1,5 +1,5 @@
 # Theme
-fish_config theme choose "Dracula Official"
+fish_config theme choose theopoimandres
 
 # Disable the original greeting
 set -g fish_greeting

@@ -37,8 +37,8 @@
   },
   "assistant": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "provider": "ollama",
+      "model": "gemma3:12b"
     },
     "version": "2"
   },
