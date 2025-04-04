@@ -38,26 +38,17 @@ $env.LS_COLORS = [
 ] | str join ":"
 
 $env.config = {
+  edit_mode: vi
+  cursor_shape: {
+    vi_insert: line
+    vi_normal: block
+  }
   color_config: $theopoimandres_theme # <-- this is the theme
-  menus: [
-    {
-      name: completion_menu
-      only_buffer_difference: false # Search is done on the text written after activating the menu
-      marker: "| "                  # Indicator that appears with the menu is active
-      type: {
-        layout: columnar          # Type of menu
-        columns: 4                # Number of columns where the options are displayed
-        col_width: 20             # Optional value. If missing all the screen width is used to calculate column width
-        col_padding: 2            # Padding between columns
-      }
-      style: {
-        text: $light_blue              # Text style
-        selected_text: $turquoise      # Text style for selected option
-        description_text: $yellow      # Text style for description
-      }
-    }
-  ]
 }
+$env.PROMPT_INDICATOR = ""
+$env.PROMPT_INDICATOR_VI_INSERT = ""
+$env.PROMPT_INDICATOR_VI_NORMAL = ""
+$env.PROMPT_MULTILINE_INDICATOR = ""
 
 alias la = lsd -la
 alias nrs = darwin-rebuild switch --flake ~/.config/nix
