@@ -173,9 +173,11 @@ disabled = false
 
 [character]
 disabled = false
-success_symbol = '[█](bold fg:color_green bg:color_bg1)[INSERT](bold fg:color_bg1 bg:color_green)[](bold fg:color_green bg:color_bg1)'
-error_symbol = '[█](bold fg:color_red bg:color_bg1)[INSERT](bold fg:color_bg1 bg:color_red)[](bold fg:color_red bg:color_bg1)'
-vimcmd_symbol = '[█](bold fg:color_purple bg:color_bg1)[NORMAL](bold fg:color_bg1 bg:color_purple)[](bold fg:color_purple bg:color_bg1)'
-vimcmd_replace_one_symbol = '[█](bold fg:color_red bg:color_bg1)[REPLACE](bold fg:color_bg1 bg:color_red)[](bold fg:color_red bg:color_bg1)'
-vimcmd_replace_symbol = '[█](bold fg:color_red bg:color_bg1)[REPLACE](bold fg:color_bg1 bg:color_red)[](bold fg:color_red bg:color_bg1)'
-vimcmd_visual_symbol = '[█](bold fg:color_yellow bg:color_bg1)[VISUAL](bold fg:color_bg1 bg:color_yellow)[](bold fg:color_yellow bg:color_bg1)'
+success_symbol = '[█](bold fg:color_green bg:color_bg1)[](bold fg:color_green bg:color_bg1)'
+error_symbol = '[█](bold fg:color_red bg:color_bg1)[](bold fg:color_red bg:color_bg1)'
+# success_symbol = '[█](bold fg:color_green bg:color_bg1)[INSERT](bold fg:color_bg1 bg:color_green)[](bold fg:color_green bg:color_bg1)'
+# error_symbol = '[█](bold fg:color_red bg:color_bg1)[INSERT](bold fg:color_bg1 bg:color_red)[](bold fg:color_red bg:color_bg1)'
+# vimcmd_symbol = '[█](bold fg:color_purple bg:color_bg1)[NORMAL](bold fg:color_bg1 bg:color_purple)[](bold fg:color_purple bg:color_bg1)'
+# vimcmd_replace_one_symbol = '[█](bold fg:color_red bg:color_bg1)[REPLACE](bold fg:color_bg1 bg:color_red)[](bold fg:color_red bg:color_bg1)'
+# vimcmd_replace_symbol = '[█](bold fg:color_red bg:color_bg1)[REPLACE](bold fg:color_bg1 bg:color_red)[](bold fg:color_red bg:color_bg1)'
+# vimcmd_visual_symbol = '[█](bold fg:color_yellow bg:color_bg1)[VISUAL](bold fg:color_bg1 bg:color_yellow)[](bold fg:color_yellow bg:color_bg1)'
