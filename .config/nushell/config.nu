@@ -43,6 +43,7 @@ $env.config = {
     vi_insert: line
     vi_normal: block
   }
+  highlight_resolved_externals: true
   color_config: $theopoimandres_theme # <-- this is the theme
 }
 $env.PROMPT_INDICATOR = ""

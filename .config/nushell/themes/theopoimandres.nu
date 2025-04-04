@@ -52,6 +52,7 @@ export const theopoimandres_theme = {
     vardecl: $turquoise
     variable: $turquoise
     empty: $gray2
+    
 
     shape_garbage: { fg: $purple attr: b}
     shape_bool: $light_blue
@@ -59,7 +60,7 @@ export const theopoimandres_theme = {
     shape_float: { fg: $light_blue attr: b}
     shape_range: { fg: $yellow attr: b}
     shape_internalcall: { fg: $turquoise attr: b}
-    shape_external: $turquoise
+    shape_external: $purple
     shape_externalarg: { fg: $white attr: b}
     shape_literal: $white
     shape_operator: $light_blue
@@ -76,5 +77,5 @@ export const theopoimandres_theme = {
     shape_record: { fg: $turquoise attr: b}
     shape_string_interpolation: { fg: $turquoise attr: b}
     shape_table: { fg: $turquoise attr: b}
-}
+    shape_external_resolved: { fg: $turquoise attr: b }}
 
