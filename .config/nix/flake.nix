@@ -24,10 +24,13 @@
           pkgs.ripgrep
           pkgs.fzf
           pkgs.zellij
+          pkgs.yazi
           pkgs.gh
+          pkgs.gh-dash
           # Global Languages
           pkgs.rustup # rust
           pkgs.uv # python
+          pkgs.fnm # javascript
           # Global LSPs
           pkgs.basedpyright # python linter
           pkgs.ruff # python formatter
