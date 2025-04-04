@@ -1,0 +1,34 @@
+theme = "theopoimandres"
+# theme = "base16_transparent"
+
+[keys.normal]
+X = "select_line_above"
+x = "select_line_below"
+G = "goto_last_line"
+
+[editor]
+color-modes = true
+end-of-line-diagnostics = "hint"
+line-number = "relative"
+scroll-lines = 10
+scrolloff = 10
+popup-border = "all"
+
+[editor.inline-diagnostics]
+cursor-line = "warning" # show warnings and errors on the cursorline inline
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "read-only-indicator", "file-modification-indicator", "file-name"]
+center = []
+right = ["diagnostics", "register", "file-encoding", "file-type", "total-line-numbers", "position"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+# [editor.lsp]
+# display-inlay-hints = true
+

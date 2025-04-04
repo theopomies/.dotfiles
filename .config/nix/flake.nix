@@ -12,15 +12,40 @@
     configuration = { pkgs, ... }: {
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
-      environment.systemPackages =
-        [ pkgs.vim
+      environment.systemPackages = [
+          # Terminal / CLI / TUI
+          pkgs.nushell
+          pkgs.helix
+          pkgs.zoxide
+          pkgs.starship
+          pkgs.atuin
+          pkgs.lsd
+          pkgs.bat
+          pkgs.ripgrep
+          pkgs.fzf
+          pkgs.zellij
+          pkgs.gh
+          # Global Languages
+          pkgs.rustup # rust
+          pkgs.uv # python
+          # Global LSPs
+          pkgs.basedpyright # python linter
+          pkgs.ruff # python formatter
+          pkgs.typescript-language-server # typescript of course
         ];
+
+      # Disable nix-darwin's management of Nix to avoid conflict with Determinate
+      nix.enable = false;
 
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
 
+      # Force builds from source by disabling binary caches
+      # NOTE: Also needs to be added to /etc/nix/nix.conf because managed by Determinate System's Nix
+      nix.settings.substitute = false;
+
       # Enable alternative shell support in nix-darwin.
-      # programs.fish.enable = true;
+      programs.zsh.enable = true;
 
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
@@ -36,7 +61,8 @@
   {
     # Build darwin flake using:
     # $ darwin-rebuild build --flake .#$(scutil --get LocalHostName)
-    darwinConfigurations."$(scutil --get LocalHostName)" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."Theos-MacBook-Pro" = nix-darwin.lib.darwinSystem {
+      system = "aarch64-darwin";
       modules = [ configuration ];
     };
   };

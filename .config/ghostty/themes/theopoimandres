@@ -1,26 +1,11 @@
-# Name: Poimandres
-# Author: Oliver Cederborg
-# Origin: https://github.com/olivercederborg/poimandres-wezterm
-
-# ANSI colors (0-7)
-# dark blue (almost black)
 palette = 0=#171922
-# red
 palette = 1=#D0679D
-# turquoise
 palette = 2=#5DE4C7
-# yellow-ish
 palette = 3=#FFFAC2
-# light blue
 palette = 4=#89DDFF
-# magenta pink
 palette = 5=#f087bd
-# grayish blue
 palette = 6=#91B4D5
-# white-ish
 palette = 7=#E4F0FB
-
-# Bright ANSI colors (8-15)
 palette = 8=#506477
 palette = 9=#D0679D
 palette = 10=#5DE4C7
@@ -29,15 +14,9 @@ palette = 12=#ADD7FF
 palette = 13=#FCC5E9
 palette = 14=#ADD7FF
 palette = 15=#FFFFFF
-
-# Standard colors
 background = #14161B
 foreground = #E4F0FB
-
-# UI elements
 cursor-color = #5DE4c7
-# #A6ACCD
 cursor-text = #1B1E28
 selection-background = #5DE4c7
-#506477
-# selection-foreground = #E4F0FB
+selection-foreground = #E4F0FB

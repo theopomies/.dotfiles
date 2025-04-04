@@ -1,0 +1,138 @@
+"ui.background" = { fg = "gray1" }
+
+"ui.cursor" = { fg = "gray4", bg = "gray1" }
+"ui.cursor.normal" = { fg = "gray4", bg = "gray1" }
+"ui.cursor.insert" = { fg = "gray4", bg = "gray1" }
+"ui.cursor.select" = { fg = "gray4", bg = "gray1" }
+"ui.cursor.match" = { fg = "gray4", bg = "gray1" }
+"ui.cursor.primary" = { fg = "gray4", bg = "gray1" }
+"ui.cursor.primary.normal" = { fg = "gray4", bg = "gray1" }
+"ui.cursor.primary.insert" = { fg = "gray4", bg = "gray1" }
+"ui.cursor.primary.select" = { fg = "gray4", bg = "gray1" }
+
+"ui.debug.breakpoint" = { fg = "gray4" }
+"ui.debug.active" = { fg = "gray4" }
+"ui.gutter" = { fg = "gray4" }
+"ui.gutter.selected" = { fg = "gray4" }
+"ui.linenr" = { fg = "gray2" }
+"ui.linenr.selected" = { fg = "gray1", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "gray1" }
+"ui.statusline.inactive" = { fg = "gray1" }
+"ui.statusline.normal" = { fg = "gray5", bg = "turquoise", modifiers = [
+    "bold",
+] }
+"ui.statusline.insert" = { fg = "gray5", bg = "dark_blue", modifiers = [
+    "bold",
+] }
+"ui.statusline.select" = { fg = "gray5", bg = "yellow", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "gray1" }
+
+"ui.bufferline" = { fg = "gray1" }
+"ui.bufferline.active" = { fg = "gray1" }
+"ui.bufferline.background" = { fg = "gray1" }
+
+"ui.popup" = { fg = "gray1" }
+"ui.popup.info" = { fg = "gray1" }
+
+"ui.picker.header" = { fg = "gray1" }
+"ui.picker.header.column" = { fg = "gray1" }
+"ui.picker.header.column.active" = { fg = "gray1" }
+
+"ui.window" = { fg = "gray1" }
+
+"ui.help" = { fg = "gray1" }
+
+"ui.text" = { fg = "light_white" }
+"ui.text.focus" = { fg = "turquoise", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "gray2" }
+"ui.text.info" = { fg = "light_blue" }
+"ui.text.directory" = { fg = "light_white" }
+
+"ui.virtual.ruler" = { fg = "gray2" }
+"ui.virtual.whitespace" = { fg = "gray2" }
+"ui.virtual.indent-guide" = { fg = "gray2" }
+"ui.virtual.inlay-hint" = { fg = "gray2", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.parameter" = { fg = "gray2", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "gray2", modifiers = ["italic"] }
+
+"ui.virtual.wrap" = { fg = "black" }
+"ui.virtual.jump-label" = { fg = "gray1" }
+
+"ui.menu" = { fg = "gray1" }
+"ui.menu.selected" = { fg = "turquoise" }
+"ui.menu.scroll" = { fg = "gray1" }
+
+"ui.selection" = { bg = "gray4" }
+"ui.selection.primary" = { bg = "gray4" }
+
+"ui.highlight" = { fg = "gray4" }
+"ui.highlight.frameline" = { fg = "gray4" }
+
+"ui.cursorline.primary" = { bg = "gray4" }
+"ui.cursorline.secondary" = { bg = "gray4" }
+
+"ui.cursorcolumn.primary" = { bg = "gray4" }
+"ui.cursorcolumn.secondary" = { bg = "gray4" }
+
+"warning" = { fg = "yellow" }
+"error" = { fg = "purple" }
+"info" = { fg = "light_blue" }
+"hint" = { fg = "gray1" }
+
+"diagnostic" = { fg = "gray2" }
+"diagnostic.hint" = { fg = "gray1", underline = { color = "gray1", style = "double_line" } }
+"diagnostic.info" = { fg = "light_blue", underline = { color = "light_blue", style = "dotted" } }
+"diagnostic.warning" = { fg = "yellow", underline = { color = "yellow", style = "curl" } }
+"diagnostic.error" = { fg = "purple", underline = { color = "purple", style = "curl" } }
+"diagnostic.unnecessary" = { fg = "gray2", underline = { color = "gray2", style = "dashed" } }
+"diagnostic.deprecated" = { fg = "gray2", underline = { color = "gray2", style = "dashed" } }
+
+"tabstop" = { fg = "gray4" }
+
+"diff.plus" = { fg = "turquoise" }
+"diff.minus" = { fg = "purple" }
+"diff.delta" = { fg = "light_blue" }
+
+"attribute" = { fg = "gray_blue", modifiers = ["italic"] }
+"boolean" = { fg = "turquoise" }
+"comment" = { fg = "gray2", modifiers = ["italic"] }
+"comment.doc" = { fg = "gray2", modifiers = ["italic"] }
+"constant" = { fg = "turquoise" }
+"constructor" = { fg = "turquoise" }
+"emphasis" = { fg = "gray_blue", modifiers = ["italic"] }
+"emphasis.strong" = { fg = "gray_blue", modifiers = ["bold"] }
+"keyword" = { fg = "dark_blue", modifiers = ["italic"] }
+"operator" = { fg = "dark_blue" }
+"keyword.operator" = { fg = "dark_blue", modifiers = ["italic"] }
+"label" = { fg = "gray_blue" }
+"link_text" = { fg = "turquoise" }
+"link_uri" = { fg = "turquoise" }
+"number" = { fg = "turquoise" }
+"punctuation" = { fg = "gray1" }
+"string" = { fg = "turquoise" }
+"tag" = { fg = "turquoise" }
+"text.literal" = { fg = "turquoise" }
+"title" = { fg = "gray_blue" }
+"type" = { fg = "turquoise" }
+"variable" = { fg = "light_white" }
+"variable.special" = { fg = "gray_blue", modifiers = ["italic"] }
+
+# Complete based on the commented theme below
+[palette]
+turquoise = "#5DE4C7"
+light_blue = "#89DDFF"
+dark_blue = "#ADD7FF"
+gray_blue = "#91B4D5"
+pink = "#F087BD"
+yellow = "#FFFAC2"
+purple = "#D0679D"
+white = "#FFFFFF"
+light_white = "#E4F0FB"
+black = "#1B1E28"
+black_black = "#000000"
+gray1 = "#A6ACCD"
+gray2 = "#767C9D"
+gray3 = "#303340"
+gray4 = "#202431"
+gray5 = "#14161B"
