@@ -4,7 +4,7 @@
 "ui.cursor.normal" = { fg = "gray4", bg = "gray1" }
 "ui.cursor.insert" = { fg = "gray4", bg = "gray1" }
 "ui.cursor.select" = { fg = "gray4", bg = "gray1" }
-"ui.cursor.match" = { fg = "gray4", bg = "gray1" }
+"ui.cursor.match" = { fg = "gray1", bg = "gray3" }
 "ui.cursor.primary" = { fg = "gray4", bg = "gray1" }
 "ui.cursor.primary.normal" = { fg = "gray4", bg = "gray1" }
 "ui.cursor.primary.insert" = { fg = "gray4", bg = "gray1" }

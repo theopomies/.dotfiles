@@ -1,10 +1,14 @@
 theme = "theopoimandres"
-# theme = "base16_transparent"
 
 [keys.normal]
+X = ["select_mode", "select_line_above"]
+x = ["select_mode", "select_line_below"]
+V = ["select_mode", "select_line_below"]
+G = "goto_last_line"
+
+[keys.select]
 X = "select_line_above"
 x = "select_line_below"
-G = "goto_last_line"
 
 [editor]
 color-modes = true
@@ -29,6 +33,5 @@ mode.normal = "NORMAL"
 mode.insert = "INSERT"
 mode.select = "SELECT"
 
-# [editor.lsp]
-# display-inlay-hints = true
-
+[editor.lsp]
+display-inlay-hints = true

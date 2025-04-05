@@ -1,0 +1,3 @@
+[[language]]
+name = "typescript"
+language-servers = [ {name="typescript-language-server", except-features = [ "inlay-hints" ]} ]
