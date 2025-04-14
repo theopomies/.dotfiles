@@ -27,14 +27,19 @@
           pkgs.yazi
           pkgs.gh
           pkgs.gh-dash
+          pkgs.carapace
           # Global Languages
           pkgs.rustup # rust
           pkgs.uv # python
           pkgs.fnm # javascript
+          pkgs.zig # zig
           # Global LSPs
           pkgs.basedpyright # python linter
           pkgs.ruff # python formatter
           pkgs.typescript-language-server # typescript of course
+          pkgs.zls # zig
+          pkgs.taplo # toml
+          pkgs.marksman # md
         ];
 
       # Disable nix-darwin's management of Nix to avoid conflict with Determinate

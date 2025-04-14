@@ -17,6 +17,7 @@ line-number = "relative"
 scroll-lines = 10
 scrolloff = 10
 popup-border = "all"
+bufferline = "always"
 
 [editor.file-picker]
 hidden = false
