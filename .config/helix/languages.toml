@@ -1,3 +1,24 @@
+# TypeScript
 [[language]]
 name = "typescript"
 language-servers = [ {name="typescript-language-server", except-features = [ "inlay-hints" ]} ]
+
+# Python
+[language-server.basedpyright]
+command = "basedpyright-langserver"
+args = ["--stdio"]
+
+[language-server.basedpyright.config]
+python.analysis.inlayHint.enable = true
+python.analysis.diagnosticMode = "workspace"
+
+
+[language-server.ruff]
+command = "ruff"
+args = ["server", "-q", "--preview"] 
+
+
+[[language]]
+name = "python"
+language-servers = [ {name = "basedpyright", except-features=["diagnostics"]}, "ruff" ]
+auto-format = true

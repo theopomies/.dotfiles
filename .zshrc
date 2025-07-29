@@ -34,8 +34,8 @@ export ZSH="/Users/theopomies/.oh-my-zsh"
 export EDITOR=nvim
 export VISUAL=nvim
 export NVM_DIR="$HOME/.nvm"
-export MODULAR_HOME="$HOME/.modular"
-export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
+# export MODULAR_HOME="$HOME/.modular"
+# export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
 export DENO_INSTALL="/Users/theopomies/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -77,5 +77,5 @@ eval "$(starship init zsh)"
 # bun completions
 [ -s "/Users/theopomies/.bun/_bun" ] && source "/Users/theopomies/.bun/_bun"
 
-export PATH="$PATH:/Users/theopomies/.modular/bin"
-eval "$(magic completion --shell zsh)"
+# export PATH="$PATH:/Users/theopomies/.modular/bin"
+# eval "$(magic completion --shell zsh)"

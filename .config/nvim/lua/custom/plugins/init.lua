@@ -15,10 +15,9 @@ return {
         disable_background = true, -- disable background
       }
     end,
-
     -- optionally set the colorscheme within lazy config
     init = function()
-      vim.cmd.colorscheme 'poimandres'
+      -- vim.cmd.colorscheme 'poimandres'
     end,
   },
   {
@@ -27,6 +26,7 @@ return {
     opts = {
       -- theme = 'dracula-nvim',
       theme = 'poimandres',
+      -- theme = 'theopoimandres',
     },
   },
 
@@ -101,5 +101,34 @@ return {
       },
     },
     ft = { 'markdown', 'Avante' },
+  },
+
+  {
+    'stevearc/oil.nvim',
+    ---@module 'oil'
+    ---@type oil.SetupOpts
+    opts = {},
+    -- Optional dependencies
+    dependencies = { { 'echasnovski/mini.icons', opts = {} } },
+    -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
+    -- Lazy loading is not recommended because it is very tricky to make it work correctly in all situations.
+    lazy = false,
+  },
+
+  -- TheopoimanDres - Custom theme
+  {
+    'theopomies/theopoimandres.nvim',
+    dev = true, -- This will look for the plugin locally in dev/
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('theopoimandres').setup {
+        disable_background = true, -- disable background like the original poimandres config
+        disable_italics = false, -- We want italics!
+      }
+    end,
+    init = function()
+      vim.cmd.colorscheme 'theopoimandres'
+    end,
   },
 }

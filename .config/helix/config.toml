@@ -1,9 +1,10 @@
+
 theme = "theopoimandres"
 
 [keys.normal]
 X = ["select_mode", "select_line_above"]
 x = ["select_mode", "select_line_below"]
-V = ["select_mode", "select_line_below"]
+# V = ["select_mode", "select_line_below"]
 G = "goto_last_line"
 
 [keys.select]
@@ -18,6 +19,7 @@ scroll-lines = 10
 scrolloff = 10
 popup-border = "all"
 bufferline = "always"
+evil = true
 
 [editor.file-picker]
 hidden = false

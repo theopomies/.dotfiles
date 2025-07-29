@@ -15,7 +15,7 @@
       environment.systemPackages = [
           # Terminal / CLI / TUI
           pkgs.nushell
-          pkgs.helix
+          pkgs.evil-helix
           pkgs.zoxide
           pkgs.starship
           pkgs.atuin
@@ -40,6 +40,7 @@
           pkgs.zls # zig
           pkgs.taplo # toml
           pkgs.marksman # md
+          pkgs.nil # nix
         ];
 
       # Disable nix-darwin's management of Nix to avoid conflict with Determinate

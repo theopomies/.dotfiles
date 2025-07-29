@@ -1,4 +1,4 @@
-use themes/theopoimandres.nu
+use themes/theopoimandres.nu theopoimandres_theme
 
 $env.config.show_banner = false
 $env.EDITOR = "hx"
